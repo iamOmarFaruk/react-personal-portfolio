@@ -1,32 +1,23 @@
 import "./navbar.scss";
-import { motion } from 'framer-motion';
 const Navbar = () => {
   return (
     <>
       <div className="navbar">
        
         <div className="wrapper">
-          <motion.span
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+          <span>
             React Folio
-          </motion.span>
+          </span>
 
 
 
 
-          <div className="social">
-            <a href="#">
-              <img src="/facebook.png" alt="Facebook" />
-            </a>
-            <a href="#">
-              <img src="/instagram.png" alt="Instagram" />
-            </a>
-            <a href="#">
-              <img src="/youtube.png" alt="Youtube" />
-            </a>
+          <div className="nav-menu">
+            <a className="nav-item">Home</a>
+            <a className="nav-item">About</a>
+            <a className="nav-item">Services</a>
+            <a className="nav-item">Portfolio</a>
+            <a className="nav-item">Contact</a>
           </div>
         </div>
       </div>
