@@ -33,7 +33,7 @@ const Hero = () => {
       x: [0, -window.innerWidth],
       transition: {
         x: {
-          repeat: 2,
+          repeat:1,
           repeatType: 'loop',
           duration: 10,
           ease: 'linear'
