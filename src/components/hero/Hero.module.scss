@@ -109,11 +109,11 @@
     .slidingTextContainer{
       font-size: 50vh;
       font-weight: bold;
-      color: rgb(124 124 124 / 15%);
+      color:rgb(124 124 124 / 4%);
       position: absolute;
       z-index: 1;
       width: 100%;
-      bottom: -120px;
+      top: 110px;
       white-space: nowrap;
     }
   }
