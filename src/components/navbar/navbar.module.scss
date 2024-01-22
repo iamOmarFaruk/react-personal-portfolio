@@ -14,8 +14,8 @@
     align-items: center;
   }
   .logo{
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: normal;
     color: #fff;
     cursor: pointer;
   }
@@ -23,14 +23,29 @@
   .nav-menu{
     display: flex;
     gap:50px;
+    align-items: center;
     .nav-item{
       cursor: pointer;
-      font-size: 1.2rem;
-      font-weight: bold;
+      font-size:.8rem;
+      letter-spacing: 1px;
       color: #fff;
       transition: all 0.3s ease;
       &:hover{
         color: #f1f1f1;
+      }
+    }
+    .nav-cta-button {
+      font-weight: bold;
+      background: linear-gradient(to right, #f9d423 0%, #f83600 100%);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      transition: transform 0.3s ease-in-out;
+      border-radius:5px;
+      &:hover {
+        transform: scale(1.05);
+        color: #fff;
       }
     }
   }
