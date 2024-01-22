@@ -4,6 +4,7 @@
   position: fixed; // Add this line to make the navbar fixed at the top
   top: 0; // Add this line to position the navbar at the top
   height: 100px;
+  background-color: #000;
   .wrapper{
     max-width:1366px;
     margin: auto;
@@ -12,9 +13,13 @@
     height:100%;
     align-items: center;
   }
-  span{
+  .logo{
+    font-size: 2rem;
     font-weight: bold;
+    color: #fff;
+    cursor: pointer;
   }
+
   .nav-menu{
     display: flex;
     gap:50px;
