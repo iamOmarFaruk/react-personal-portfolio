@@ -1,0 +1,114 @@
+.hero {
+  margin-top: 100px;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+
+    .textContainer {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 60%;
+      position: relative;
+      z-index: 99;
+
+
+      h2{
+        font-size: 20px;
+        font-weight: regular;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        
+      }
+      h1{
+        font-size: 80px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .buttons{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .btn {
+        width: 200px;
+        height: 50px;
+        background: #fff;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #111132;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid #fff;
+        cursor: pointer;
+        &:hover {
+          background: #111132;
+          color: #fff;
+        }
+      }
+
+      // I need to create a secondary button with reverse style 
+      .btn-secondary {
+        width: 200px;
+        height: 50px;
+        background: #111132;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid #fff;
+        cursor: pointer;
+        &:hover {
+          background: #fff;
+          color: #111132;
+        }
+      }
+    }
+
+    .indicator {
+      width: 30px;
+      z-index: 999;
+    }
+
+    .imageContainer {
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 99;
+    }
+
+    .slidingTextContainer{
+      font-size: 50vh;
+      font-weight: bold;
+      color: rgb(124 124 124 / 15%);
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      bottom: -120px;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.navbar{
+  width: 100%;
+  z-index: 100;
+  position: fixed; // Add this line to make the navbar fixed at the top
+  top: 0; // Add this line to position the navbar at the top
+  height: 100px;
+  .wrapper{
+    max-width:1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height:100%;
+    align-items: center;
+  }
+  span{
+    font-weight: bold;
+  }
+  .social{
+    display: flex;
+    gap:10px;
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
