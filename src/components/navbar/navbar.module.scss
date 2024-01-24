@@ -25,13 +25,32 @@
     gap:50px;
     align-items: center;
     .nav-item{
+      position: relative;
       cursor: pointer;
       font-size:.8rem;
       letter-spacing: 1px;
       color: #fff;
       transition: all 0.3s ease;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #f1f1f1;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+
       &:hover{
         color: #f1f1f1;
+        
+
+        &::after {
+          width: 100%;
+        }
       }
     }
     .nav-cta-button {
